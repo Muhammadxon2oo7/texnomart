@@ -1,0 +1,105 @@
+[
+    {
+        "title":"Маиший техника",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/texnika_dlya_doma.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"1"
+    },
+    {
+        "title":"Офис жиҳозлари",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/ofisnaya_texnika.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"2"
+    },
+    {
+        "title":"Ошхона учун техника",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/texnika_dlya_kuxni.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"3"
+    },
+    {
+        "title":"Уй учун идишлар",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/posuda_dlya_doma.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"4"
+    },
+    {
+        "title":"Автомобил учун маҳсулотлар",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/tovar_dlya_avto.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"5"
+    },
+    {
+        "title":"Иқлим техникаси",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/klimaticheskaya_texnika.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"6"
+    },
+    {
+        "title":"Телевизорлар ва телекарталар",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/televizori_i_telekarti.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"7"
+    },
+    {
+        "title":"Телефонлар ва Гаджетлар",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/telefoni_i_gatjeti.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"8"
+    },
+    {
+        "title":"Компютер техникаси",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/komputernaya_texnika.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"9"
+    },
+    {
+        "title":"Аудиотехника ва Hi-Fi",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/audiotexnika_i_hifi.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"10"
+    },
+    {
+        "title":"Гўзаллик ва саломатлик",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/krasota_i_zdorove.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"11"
+    },
+    {
+        "title":"Болалар учун маҳсулотлар",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/tovati_dlya_detey.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"12"
+    },
+    {
+        "title":"Расмлар ва видеолар",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/foto_i_video.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"13"
+    },
+    {
+        "title":"Спорт ва севимли машғулот",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/spor_i_uvlichenye.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"14"
+    },
+    {
+        "title":"Ўйин консоллари",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/igroviye_pristavki.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"15"
+    },
+    {
+        "title":"Маиший маҳсулотлар",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/tovari_dlya_doma.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"16"
+    },
+    {
+        "title":"Акциялар ва чегирмалар",
+        "img":"https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/aksii_i_skidki.svg",
+        "imgRight":"https://texnomart.uz/_nuxt/img/icon-right__blue.49b0e09.svg",
+        "id":"17"
+    }
+    
+]

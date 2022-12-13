@@ -1,0 +1,28 @@
+.swiper__right__btn,
+.swiper__left__btn{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #fff!important;
+    border: 1px solid #ececec;
+    font-size:30px;
+    position:absolute;
+    z-index:10;
+    cursor:pointer;
+}
+.swiper__left__btn{
+    top:50%;
+    left:48px;
+    transform:translateY(-50%);
+}
+.swiper__right__btn{
+    right:48px;
+    top:50%;
+    transform:translateY(-50%);
+}
+.little__left{
+    left: -50;
+}

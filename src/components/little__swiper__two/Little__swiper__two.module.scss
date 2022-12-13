@@ -1,0 +1,28 @@
+.little__Carusel__two__card{
+
+    max-width: 220.667px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(236, 236, 236, 0.7);
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    cursor: pointer;
+    & img{
+        width: 80px;
+        height: 30px;
+    }
+}
+.little__Carusel__two{
+    position: relative;
+    max-width: calc(100% - 104px);
+    margin: 0 auto;
+    .little__Carusel__title{
+        font-size: 20px;
+        color: #333333;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+}

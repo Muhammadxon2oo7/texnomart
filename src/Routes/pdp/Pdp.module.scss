@@ -1,0 +1,92 @@
+
+.Loading{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Pdp{
+    width:100%;
+    height:auto;
+    .container{
+        width: 100%;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .pdp__title{
+        width: 100%;
+        border-bottom: 1px solid grey;
+        margin-bottom: 16px;
+        p{
+            color: #373f41;
+            line-height: 32px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+    .product__content{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+
+        .price__card{
+            width: 500px;
+            height: auto;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 10px;
+            
+            p{
+                &:first-child{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 20px;
+                    color: #373f41cf;
+                    margin-bottom: 20px;
+                }
+                &:nth-child(2){
+                    width: 100%;
+                    text-align: end;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: #373f41;
+                    text-shadow: 2px 2px 1px #373f41;
+                }
+            }
+            .add_to_Card_pdp{
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 70%;
+                background-color: #fbc100;
+                border-radius: 6px;
+                border: none;
+                outline: none;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: .2px;
+                height: 52px;
+                margin-bottom: 24px;
+                cursor: pointer;
+                position: relative;
+                box-shadow: 0 2px 0 #d5a401;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                       
+        }
+    }
+    .pdp__img__wrapper{
+        width: 598px;
+        height: 450px;
+        background-color: red;
+        margin-bottom: 40px;
+        .pdp__image{
+            width: 100%;
+            height: 100%; 
+        }
+    }
+}

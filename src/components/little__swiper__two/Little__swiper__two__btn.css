@@ -1,0 +1,26 @@
+.little__swiper__two__right,
+.little__swiper__two__left{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #fff!important;
+    border: 1px solid #ececec;
+    font-size:30px;
+    position:absolute;
+    z-index:10;
+    cursor:pointer;
+}
+
+.little__swiper__two__right{
+    right: 0px;
+    top: 50%;
+    transform:translateX(50%)  translateY(0%) ;
+}
+.little__swiper__two__left{
+    left: 0px;
+    top: 50%;
+    transform:translateX(-50%)  translateY(0%) ;
+}

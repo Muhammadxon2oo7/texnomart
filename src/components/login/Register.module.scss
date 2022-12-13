@@ -1,0 +1,146 @@
+.register{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    .showerror{
+        font-weight: lighter;
+        color: red;
+        cursor: pointer;
+        margin-bottom: 10px;
+        
+    }
+    .rectangle {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: red;
+        transform: scale(0);
+        border-radius: 50%;
+        color: white;
+        opacity: 0;
+        overflow: hidden;
+        animation: scale-in .3s ease-out forwards,
+          expand .35s .25s ease-out forwards;
+        margin-bottom: 10px;
+      }
+      
+      .notificationtext {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        animation: fade-in .65s ease-in forwards;
+        & span{
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+        .closeNotification{
+          width: 100%;
+          height: 100%;
+          font-size: 24px;
+          color: #333;
+          
+        }
+      }
+      
+      @keyframes scale-in {
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      
+      @keyframes expand {
+        50% {
+          width: 350px;
+          border-radius: 6px;
+        }
+        100% {
+          width: 300px;
+          border-radius: 4px;
+          box-shadow: 0px 1px 3px 0px rgba(0,0,0,.2),
+                      0px 1px 1px 0px rgba(0,0,0,.14),
+                      0px 3px 3px -1px rgba(0,0,0,.12);
+        }
+      }
+      
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: .8;
+        }
+      }
+    
+    .register__form{
+        .register__email__fieldset{
+            width: 400px;
+            background-color: transparent;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0 0 0 1px #d5d8df;
+            margin-bottom: 20px;
+            .email__label{
+                transform: translateX(0.6rem);
+                background-color: #fff;
+                padding:0 5px;
+            }
+            .register__email {
+                width: 400px;
+                height: 100%;
+                border: none;
+                border-radius: 6px;
+                background: transparent;
+                padding: 0 17px;
+                z-index: 1;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 20px;
+                color: #333;
+                height: 48px;
+                outline: none;
+                
+            } 
+        }
+        .register__email__fieldset:focus-within{
+            box-shadow: 0 0 0 1px #FBC100;
+        }
+        .register__password__fieldset{
+            width: 400px;
+            border: none;
+            border-radius: 6px;
+            background: transparent;
+            padding: 0 17px;
+            z-index: 1;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333;
+            box-shadow: 0 0 0 1px #d5d8df;
+        }
+        .register__btn{
+            width: 400px;
+            background: #fbc100;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: .4px;
+            color: #333;
+            padding: 11px 10px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

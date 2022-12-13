@@ -1,0 +1,480 @@
+$bg: #f3f8fa;
+$white: #fff;
+$black: #282936;
+
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65, 0, .076, 1)) {
+    transition: $property $duration $ease;
+}
+
+.modal__wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .modal__bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.481);
+    }
+
+    .modal__card {
+        max-width: 900px;
+        width: 100%;
+        max-height: 410px;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 6px;
+        position: relative;
+        z-index: 1;
+        padding: 28px 40px;
+        overflow-y: scroll;
+
+        .closeBtn__wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            background-color: #fff !important;
+            border: 1px solid #ececec;
+            font-size: 30px;
+            position: absolute;
+            z-index: 10;
+            cursor: pointer;
+            font-size: 20px;
+            top: 15px;
+            right: 15px;
+        }
+
+        .modal__title__wrapper {
+            width: 100%;
+            margin-bottom: 32px;
+
+            & p {
+                font-size: 20px;
+                line-height: 28px;
+                color: #333;
+                font-weight: bold;
+            }
+        }
+
+        .no__product {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .no__product__icon {
+                width: 100%;
+                font-size: 64px;
+                color: #BABAC0;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .no__product__text {
+                width: 100%;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+
+            .go__shopping {
+                width: 150px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 44px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                letter-spacing: .4px;
+                color: #333;
+                border: 2px solid #fbc100;
+                box-sizing: border-box;
+                border-radius: 6px;
+                margin-top: 32px;
+                padding: 0 20px;
+                background-color: transparent;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+
+.savatcha__wrapper {
+    // padding: 28px 40px;
+    position: relative;
+    margin-bottom: 100px;
+    .savatcha__item {
+        width: 100%;
+        height: 125px;
+        align-items: center;
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #ececec;
+        display: flex;
+        justify-content: space-between;
+
+        .savatcha__item_dec__wrapper {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0;
+
+            p {
+                display: block;
+
+                .savatcha__item__dec__p__name {
+                    color: #373f41;
+                    font-size: 14px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: flex-start;
+
+                }
+
+                .savatcha__item__dec__p__price {
+                    font-weight: bold;
+                    color: #333;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .control__btns {
+            width: 150px;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+
+            .item__remove {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                outline: none;
+                border: 0;
+                vertical-align: middle;
+                text-decoration: none;
+                background: transparent;
+                padding: 0;
+                font-size: inherit;
+                font-family: inherit;
+
+                &.learnmore {
+                    width: 12rem;
+                    height: auto;
+
+                    .circle {
+                        @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                        display: block;
+                        position: relative;
+                        inset: 0;
+                        margin: 0;
+                        width: 3rem;
+                        height: 3rem;
+                        background: #fbc100;
+                        border-radius: 1.625rem;
+
+                        .circle__remove__icon {
+                            @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 18px;
+                            color: red
+                        }
+
+                        .icon {
+                            @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            background: $white;
+
+                        }
+                    }
+
+                    .buttontext {
+                        @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        padding: 0.75rem 0;
+                        margin: 0 0 0 1.85rem;
+                        color: red;
+                        font-weight: 700;
+                        line-height: 1.6;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+
+                &:hover {
+                    .circle {
+                        width: 100%;
+                        display: block;
+                        position: relative;
+                        @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                        background-color: red;
+
+                        .circle__remove__icon {
+                            position: absolute;
+                            top: 50%;
+                            left: 25px;
+                            transform: translateY(-50%);
+                            color: #fff;
+
+                        }
+                    }
+
+                    .buttontext {
+                        color: $white;
+                    }
+                }
+            }
+
+            .item__add {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                outline: none;
+                border: 0;
+                vertical-align: middle;
+                text-decoration: none;
+                background: transparent;
+                padding: 0;
+                font-size: inherit;
+                font-family: inherit;
+
+                &.learnmore {
+                    width: 12rem;
+                    height: auto;
+
+                    .circle {
+                        @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                        display: block;
+                        position: relative;
+                        inset: 0;
+                        margin: 0;
+                        width: 3rem;
+                        height: 3rem;
+                        background: #fbc100;
+                        border-radius: 1.625rem;
+
+                        .circle__add__icon {
+                            @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            font-size: 22px;
+                            font-weight: bold;
+                            color: rgb(16, 158, 5);
+                        }
+
+                        .icon {
+                            @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            background: $white;
+
+                        }
+                    }
+
+                    .buttontext {
+                        @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        padding: 0.75rem 0;
+                        margin: 0 0 0 1.85rem;
+                        color: rgb(71, 223, 60);
+                        font-weight: 700;
+                        line-height: 1.6;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                }
+
+                &:hover {
+                    .circle {
+                        width: 100%;
+                        display: block;
+                        position: relative;
+                        @include transition(all, 0.45s, cubic-bezier(0.65, 0, .076, 1));
+                        background-color: rgb(71, 223, 60);
+
+                        .circle__add__icon {
+                            position: absolute;
+                            top: 50%;
+                            left: 25px;
+                            transform: translateY(-50%);
+                            color: #fff;
+
+                        }
+                    }
+
+                    .buttontext {
+                        color: $white;
+                    }
+                }
+            }
+
+        }
+
+        .savatcha__item__img {
+            width: 166px;
+            height: 100px;
+            margin-right: 16px;
+            border-radius: 6px;
+        }
+    }
+}
+
+.trapdoor {
+    
+    margin-top: 25px;
+    margin-bottom: 25px;
+    -webkit-transform: translateZ(0px);
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    margin-left: -100px;
+    margin-top: -25px;
+    width: 200px;
+    height: 50px;
+    box-shadow: inset -7px 0px 12px -8px rgba(0, 0, 0, 0.3), inset 7px 0px 12px -8px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transition: background 400ms ease-in-out;
+    -moz-transition: background 400ms ease-in-out;
+    -ms-transition: background 400ms ease-in-out;
+    -o-transition: background 400ms ease-in-out;
+    transition: background 400ms ease-in-out;
+    &:hover {
+        background: #fff;
+
+        .door {
+            box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.4);
+            -webkit-transform: scale(1.08);
+            -moz-transform: scale(1.08);
+            -ms-transform: scale(1.08);
+            -o-transform: scale(1.08);
+            transform: scale(1.08);
+        }
+
+        .top {
+            top: -50%;
+        }
+
+        .bottom {
+            top: 100%;
+        }
+    }
+
+    .twitterfollowbutton {
+        width:100%;
+        text-align:center;
+        align-items: center;
+        position: absolute !important;
+        margin-top: -14px;
+        font-size: 30px;
+        left: 50%;
+        top: 70%;
+        font-family: 'Calligraffitti', cursive;
+        font-weight: 700;
+        text-shadow: -15px 5px 20px #ced0d3;
+        transform: translate(-50%,-50%);
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #F9f1cc;
+        cursor: pointer;
+        text-shadow: 2px 2px 0px #FFB650, 
+          3px 3px 0px #FFD662, 
+          4px 4px 0px  #FF80BF, 
+          5px 5px 0px #EF5097, 
+          6px 6px 0px #6868AC, 
+          7px 7px 0px #90B1E0;
+    }
+}
+
+.top {
+    top: 0%;
+    left: 0px;
+
+    &:before {
+        top: 5px;
+    }
+}
+
+.bottom {
+    top: 50%;
+    left: 0px;
+
+    &:before {
+        top: -20px;
+    }
+}
+
+.door {
+    -webkit-transition: top 400ms, box-shadow 200ms, -webkit-transform 300ms;
+    -moz-transition: top 400ms, box-shadow 200ms, -moz-transform 300ms;
+    -ms-transition: top 400ms, box-shadow 200ms, -ms-transform 300ms;
+    -o-transition: top 400ms, box-shadow 200ms, -o-transform 300ms;
+    transition: top 400ms, box-shadow 200ms, transform 300ms;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    background-color: #fff;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: 2;
+    height: 50%;
+    
+    &:before {
+        position: absolute;
+        font-size: 35px;
+        display: block;
+        color: #333;
+        content: "PRICEE";
+        // left: 25%;
+        
+        color: mix(#fff, #333, 85%);
+        transform:translate(20%,-10%); 
+        font-weight: 900;
+        text-shadow: 
+            -0.0075em 0.0075em 0 mix(#fff, #fbc100, 94%),
+            0.005em 0.005em 0 mix(#fff, #fbc100, 60%),
+            0.01em 0.01em 0 mix(#fff, #fbc100, 62%), 
+            0.015em 0.015em mix(#fff, #fbc100, 64%), 
+            0.02em 0.02em 0 mix(#fff, #fbc100, 66%), 
+            0.025em 0.025em 0 mix(#fff, #fbc100, 68%),
+            0.03em 0.03em 0 mix(#fff, #fbc100, 70%),
+            0.035em 0.035em 0 mix(#fff, #fbc100, 72%);
+    }
+}
